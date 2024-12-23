@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  <nav>
+    <a href="#manageHospitals">Manage Hospitals</a>
+    <a href="#manageUsers">Manage Users</a>
+    <a href="#viewData">View Data</a>
+    <a href="index.html">Logout</a>
+  </nav>
+  <main>
+    <section id="manageHospitals">
+      <h2>Manage Hospitals</h2>
+      <!-- Add hospital form -->
+      <form id="addHospitalForm">
+        <label for="hospitalName">Hospital Name:</label>
+        <input type="text" id="hospitalName" required>
+        <button type="submit">Add Hospital</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Hospital Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="hospitalTable"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
