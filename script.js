@@ -27,3 +27,20 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     document.getElementById("error").style.display = "block";
   }
 });
+
+// Handling Login Form Submission
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    const role = await login(username, password); // Use login function from googleSheets.js
+
+    if (role === "Admin") {
+        window.location.href = "admin-dashboard.html";
+    } else if (role === "User") {
+        window.location.href = "user-dashboard.html";
+    } else {
+        alert("Invalid login credentials");
+    }
+});
