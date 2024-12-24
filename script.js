@@ -2,8 +2,8 @@
 
 // Dummy users (Replace with Google Sheets API or Firebase later)
 const users = [
-  { username: "admin", password: "admin123", role: "admin" },
-  { username: "user1", password: "user123", role: "user" },
+  { username: "obaydulbc", password: "obaydul2014b", role: "admin" },
+  { username: "monjuroul", password: "529565", role: "user" },
 ];
 
 // Login form submit event
