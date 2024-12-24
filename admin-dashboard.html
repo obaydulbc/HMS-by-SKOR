@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Admin Dashboard</h1>
-  </header>
-  <nav>
-    <a href="#manageHospitals">Manage Hospitals</a>
-    <a href="#manageUsers">Manage Users</a>
-    <a href="#viewData">View Data</a>
-    <a href="index.html">Logout</a>
-  </nav>
-  <main>
-    <section id="manageHospitals">
-      <h2>Manage Hospitals</h2>
-      <!-- Add hospital form -->
-      <form id="addHospitalForm">
-        <label for="hospitalName">Hospital Name:</label>
-        <input type="text" id="hospitalName" required>
-        <button type="submit">Add Hospital</button>
-      </form>
-      <table>
-        <thead>
-          <tr>
-            <th>Hospital Name</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="hospitalTable"></tbody>
-      </table>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="#">Manage Users</a>
+            <a href="#">Manage Hospitals</a>
+            <a href="#">Manage Patients</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+    
+    <section id="hospitalManagement">
+        <h2>Manage Hospitals</h2>
+        <!-- Hospital management functionalities here -->
     </section>
-  </main>
-  <script src="script.js"></script>
-<script src="googleSheets.js"></script>
-  
+
+    <section id="userManagement">
+        <h2>Manage Users</h2>
+        <!-- User management functionalities here -->
+    </section>
+
+    <section id="patientManagement">
+        <h2>Manage Patients</h2>
+        <!-- Patient management functionalities here -->
+    </section>
+
+    <script src="googleSheets.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
